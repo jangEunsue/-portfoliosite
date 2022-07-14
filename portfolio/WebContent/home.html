@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>장은서 포토폴리오</title>
+<link rel="stylesheet" href="css/style_login_nav_footer.css">
+<link rel="stylesheet" href="css/style_home_aboutme.css">
+<link rel="stylesheet" href="css/style_project.css">
+
+<script type="text/javascript" src="js/project.js"></script>
+<script type="text/javascript">
+
+	//로그인 페이지를 보여주는 함수
+	function login_window() {
+		//형식) window.open("파일경로" , "창이름","가로폭/ 세로 높이")
+		window.open("login.html","로그인", "width=340px, height=150px");
+	}
+	
+	function join_window() {
+		window.open("SignUp.html","회원가입", "width=380px, height=450px");
+	}
+	
+	function resume_window() {
+		open("resume.html","이력서","width=1000px, height=1000px");
+	}
+</script>
+</head>
+<body>
+	<div id="wrap">
+	<header id="head">
+		<!-- 웹 문서의 상단 영역 -->
+		<div id="login">
+			<a href="#">홈</a> 
+			<a href="#" onclick="login_window()">로그인</a>
+			<a href="#" onclick="join_window()">회원가입</a>
+		</div>
+		<!-- id = "login" end -->
+		</header><!-- id="header" end -->
+		<section id="home" class="content0">
+			<div class="home_text">
+				<p>
+					PORTFOLIO
+				</p>
+				<h1>
+					JUNIOR DEVELOPER <br>
+					<span class="name">장은서</span>
+				</h1>
+				<div class="tag">
+					<p>나만의 키워드 태그<br>
+					#웹개발자     #데이터설계     #광고 </p>
+				</div>
+				<!--class ="tag" end-->
+					<a href="#" onclick="resume_window()" >이력서Click!!</a>
+			</div><!-- class = "home_text" end -->
+		</section>
+		<!-- id="home" -->
+		<section id="nav">
+			<nav id="navi">
+				<!-- 네비게이션 -->
+				<ul>
+					<li><a href="#" onclick="resume_window()" >이력서</a></li>
+					<li><a href="#aboutme">About Me</a></li>
+					<li><a href="#i_can">언어 및 프로그램</a></li>
+					<li><a href="#project">프로젝트</a></li>
+				</ul>
+			</nav>
+			<!-- id="navi" end -->
+		</section><!-- id= "nav" end -->
+		<div id="container">
+		<!-- id="nav" end -->
+		<section id="aboutme" class="content">
+				<div class="title">
+					<ul>
+						<li><b><font size="18px">About me</font></b></li>
+						<li>
+							<div id="aboutme_navi">
+								<nav class="sub_navi">
+									<!-- 네비게이션 -->
+									<ul>
+										<li><a href="#aboutme" onclick="resume_window()">이력서</a></li>
+										<li><a href="#home">home</a></li>
+										<li><a href="#i_can">언어 및 프로그램</a></li>
+										<li><a href="#project">프로젝트</a></li>
+									</ul>
+								</nav>
+								<!-- class="sub_navi" end -->
+							</div>
+							<!-- id="abloutme_navi" end -->
+						</li>
+					</ul>
+				</div>
+				<hr color="#97C1FB">
+				<br>
+			<div class="content-left">
+				<img src="img/eunsue.png">
+			</div>
+			<!--class="content-left" end-->
+			<div class="content-right">
+				<div class="profile">
+					<h2>프로필</h2>
+					이름 : 장은서<br> 나이 : 24세<br> 학력 : 한세대학교
+					ict융합학과,미디어영상광고학과(복수전공) 졸업 <br> 수료 내역
+					<ul>
+						<li>2022.01 ~ 2022.07 kh정보교육원 (디지털컨버넌스)클라우드 웹 개발자</li>
+						<li>2021.07 ~ 2021.10 성남산업진흥원 성남 ICT기업 인턴 프로그램</li>
+						<li>2019.06 ~ 2019.08 비트교욱센터 비트교욱단기</li>
+					</ul>
+					자격증
+					<ul>
+						<li>정보처리기사</li>
+						<li>데이터분석 준 전문가</li>
+					</ul>
+				</div>
+				<!--end of profile-->
+			</div>
+			<!--class="content_right"end-->
+		</section>
+		<!-- class = "aboutme" end -->
+		<section id=i_can>
+				<div class="title">
+					<ul>
+						<li><b><font size="10px">사용 가능한 언어 및 프로그램</font></b></li>
+						<li><div id="i_can_navi">
+								<nav class="sub_navi">
+									<!-- 네비게이션 -->
+									<ul>
+										<li><a href="#i_can" onclick="resume_window()">이력서</a></li>
+										<li><a href="#home">home</a></li>
+										<li><a href="#aboutme">About Me</a></li>
+										<li><a href="#project">프로젝트</a></li>
+									</ul>
+								</nav>
+								<!-- class="sub_navi" end -->
+							</div>
+							<!-- id = "i_can_navi" end --></li>
+					</ul>
+				</div>
+			<hr color="#97C1FB">
+			<img src="img/I_can.png">
+		
+		</section>
+		<section id="project">
+				<div class="title">
+					<ul>
+						<li><b><font size="18px">Project</font></b></li>
+						<li><div id="project_navi">
+								<nav class="sub_navi">
+									<!-- 네비게이션 -->
+									<ul>
+										<li><a href="#project" onclick="resume_window()">이력서</a></li>
+										<li><a href="#home">home</a></li>
+										<li><a href="#aboutme">About Me</a></li>
+										<li><a href="#i_can">언어 및 프로그램</a></li>
+									</ul>
+								</nav>
+								<!-- class="sub_navi" end -->
+							</div>
+							<!-- id="project_navi" end --></li>
+					</ul>
+				</div>
+				<hr color="#97C1FB">
+				<br>
+			<ul>
+				<!-- 서점홈페이지 만들기 -->
+				<li id="sujum">
+					<div class="project_text">
+					<h3>서점 홈페이지 만들기</h3>
+					<p>
+						마이페이지, 마이페이지,<br> 장바구니, 결제 페이지를 구현하였습니다.
+					</p>
+					<p>
+						사용 툴 : java, Oracle<br> 참여도 : 25%
+					</p>
+					</div>
+					<div class="sujum_img"><img alt="서점사이트 메인" src="img/sujum.JPG"></div> 
+					<button class = "btn_viewopen" value="작업과정" onclick="opensujum()"> ppt</button><br>
+				</li>
+				<!-- 온습도 센서 -->
+				<li id="dht11">
+					<h3>온습도 센서 및 open api활용</h3>
+					<p>
+						온습도 센서를 이용해 온습도 변화 추이 확인, <br> open api를 이용한 해당 지역의 동파 가능성 확인
+					</p>
+					<p>
+						사용 툴 : python, mariaDB<br> 참여도 : 100%
+					</p>
+					<div class="dht11_img"><img alt="온습도 센서" src="img/dht11.jpg"></div> 
+					<button class = "btn_viewopen" value="작업과정" onclick="opendht11()"> ppt</button> <br>
+				</li>
+				<!-- 빅데이터 경진대회 -->
+				<li id="bigdate">
+					<h3>빅데이터 경진대회</h3>
+					<p>
+						광고 매체 선정을 위한 공공 데이터 분석
+					</p>
+					<p>
+						사용 툴 : 엑셀, python<br> 참여도 : 100%
+					</p>
+					<div class="bigdate_img"><img alt="미디어 사용추이 분석" src="img/bigdate.jpg"></div> 
+					<button class = "btn_viewopen" value="작업과정" onclick="openbigdate()"> ppt</button> <br>
+				</li>
+				<!-- ai데이터 기획 -->
+				<li id="ai">
+					<h3>ai데이터 기획</h3>
+					<p>
+						은행 데이터를 분석해 정기예금 가입률을 높일 기획서 제작<br>
+						데이터 분석 방법 설정, 데이터 전처리, <br>모델 코딩후 데이터적용, 모델 성능평과 및 하이퍼 파라미터 조절
+					</p>
+					<p>
+						사용 툴 : 엑셀, python<br> 참여도 : 100%
+					</p>
+					<div class="ai_img"><img alt="데이터기획" src="img/ai.jpg"></div> 
+					<button class = "btn_viewopen" value="작업과정" onclick="openAi()"> ppt</button> <br>
+				</li>
+				<!-- 음성인식 -->
+				<li id="crawling">
+					<h3>ai음성인식을 통한 스무고개퀴즈 페이지</h3>
+					<p>
+						음성인식을 위한 파이썬 코팅, 검색탭을 위해 국어사전 크롤링 코딩
+					</p>
+					<p>
+						사용 툴 : mongoDB, python<br> 참여도 : 20%
+					</p>
+					<div class="craw_img"><img alt="다섯고개 메인" src="img/crawling.jpg"></div> 
+					<button  class = "btn_viewopen" value="작업과정"  onclick="openCrawling()" > ppt</button><br>
+				</li>
+			</ul>
+		
+		</section>
+	</div>
+	<!-- id = "container" end -->
+	<footer id ="foot"><!-- 문서의 하단 내용 -->
+			<p> 신입 개발자 : 장은서</p>
+			<address>E-mail : thd56641221@gmail.com</address>
+			<p> phone : 010 - 9122 - 2904</p>
+	</footer><!-- id="foot" end -->
+	</div ><!-- id="wrap" end -->
+</body>
+</html>
+			
+			
+			
+						

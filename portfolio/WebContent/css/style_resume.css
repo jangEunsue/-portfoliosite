@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/*문서 전체에 대한 디자인 적용*/
+body{
+	font-size: 14px;
+	font-family: 맑은고딕, 명조체;
+}
+
+/*전체 div태그에 대한 디자인 적용*/
+#container{
+	width:  950px;			/*문서 전체의 폭을 설정*/
+	margin: 0 auto; 		/*문서 전체 폭 가운데 정렬*/
+	margin-bottom : 20px;
+	background-color: #fff;
+}
+/*----------head----------*/
+#head{
+	margin-top: 5%;	
+}
+
+/*--------------------본문 디자인-----------------------------*/
+
+#resume {
+	background-color: white;
+	padding-top: 5px;
+	padding-bottom : 10px;
+	float: left;
+}
+#resume article table {
+	border: 1px solid gray;
+	width: 950px;
+}
+
+#resume article table tr td a{
+	text-decoration: none;
+	color: blue;
+}

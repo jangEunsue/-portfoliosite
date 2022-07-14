@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/*문서 전체에 대한 디자인 적용*/
+body{
+	font-size: 14px;
+	font-family: 맑은고딕, 명조체;
+}
+
+/*전체 div태그에 대한 디자인 적용*/
+#container{
+	width:  950px;			/*문서 전체의 폭을 설정*/
+	margin: 0 auto; 		/*문서 전체 폭 가운데 정렬*/
+	margin-bottom : 20px;
+	background-color: #fff;
+}
+
+
+/*---------------------header 디자인------------------*/
+#head{
+	height: 20px;
+	margin-top:  0px;
+}
+
+/* header영역 중에서 로그인 영역에 대한 디자인 적용*/
+#login{
+	float:right; 
+	margin:10px;
+	font-size: 12px;
+	word-spacing: 15px; /*글자 사이 간격*/
+}
+
+/* 로그인 영역의 a태그 영역 디자인 적용*/
+#login a{
+	text-decoration: none;
+	color: #333;
+}
+
+#login a:hover{
+	color: blue;
+} 
+
+/* header 영역의 제목과 부제목 태그 디자인 적용*/
+header hgroup{
+	position: relative; 
+	top: 60px;
+	left: 180px;
+	
+}
+
+/* header영역의 주제목 디자인 적용 */
+header h1{
+	font-size: 2.5em;
+	color: #blue;
+}
+
+header h2{
+	font-size: 2.5em;
+	color: #white;
+}
+	
+/*-------------------------네비게이션 디자인 -----------------------*/
+#nav{ 
+	background-color: #F4C0AE;
+	width: 100%;
+	height: 50px;
+}
+#navi{
+	margin: 0 auto;
+	width: 950px;
+	height: 50px;
+}
+
+#navi ul{
+	height: 40px;
+	padding-top: 10px; /*안쪽 상단 영역*/
+}
+
+#navi ul li{
+	display: inline-block; /*수직 메뉴를 수평 메뉴로 변경*/
+	font-size: 17px;
+}
+
+#navi a{
+	padding: 20px 100px 5px 20px;
+	color: white;
+	text-decoration: none;
+	
+}
+
+/*a 태그에 마우스 오버 시, 클릭 시, 포커스가 올라갔을 때 디자인 적용*/
+#navi a:hover, #navi a:active, #navi a:focus, .sub_navi a: hover, .sub_navi a: active, .sub_navi a:focus {
+	color: black;
+}
+
+/*------------------서브 네비게이션-------------------------------*/
+
+/*서브 네비게이션 div 크기지정*/
+#aboutme_navi{
+	width: 670px;
+}
+
+#i_can_navi{
+	 width: 900px; 
+}
+
+#project_navi{
+	width: 739px;
+}
+
+/*서브 네비게이션 스타일 적용*/
+.title ul li{
+	display: inline-block;
+}
+
+
+.sub_navi{
+	float: right;
+}
+
+.sub_navi ul{
+	float: right;
+}
+
+.sub_navi ul li{
+	display: inline-block; /*수직 메뉴를 수평 메뉴로 변경*/
+	font-size: 12px;
+}
+
+.sub_navi a{
+	padding: 5px;
+	color: #97C1FB;
+	text-decoration: none;
+	
+}
+
+/*--------------------하단 디자인 ---------------------*/
+#foot{
+	padding: 5px 0;
+	background-color: #97C1FB;
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	clear: both; /*float 속성 해채*/
+}
+
+/*-----------------------------------------*/
+header, nav, section, article, footer, aside {
+    display: block;
+}
+
+
+

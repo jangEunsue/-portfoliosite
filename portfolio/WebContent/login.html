@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인</title>
+<script type="text/javascript">
+	function check() {
+		function check() {
+			
+			let userId = document.getElementById("id");
+			let userPwd = document.getElementById("pw");
+			
+			// 아이디 입력 창 입력 여부 확인 작업
+			if(userId.value == "") {
+				alert("아이디를 입력해 주세요.....");
+				userId.focus();
+				return false;  // 데이터 전송이 차단됨.
+			}
+			
+			// 비밀번호 입력 창 입력 여부 확인 작업
+			if(userPwd.value == "") {
+				alert("비밀번호를 입력해 주세요~~~~");
+				userPwd.focus();
+				return false;
+			
+		}
+
+		
+	}
+	
+
+</script>
+</head>
+<body>
+<!-- 로그인 폼 -->
+<fieldset>
+	<legend>로그인</legend>
+	<table onsubmit="return check()">
+		<tr>
+			<td>아이디</td>
+			<td><input type="text" id="id" autofocus="autofocus"></td>
+		</tr>
+		<tr>
+			<td>비밀번호</td>
+			<td><input type="password" id="pw"></td>
+		</tr>
+		<tr>
+			<td> <input type="submit" value="로그인" > </td>
+		</tr>
+	</table>
+</fieldset>
+</body>
+</html>

@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+ /*서점, 온습도*/
+#sujum, #dht11{
+	height: 200px;
+}
+
+/*경진대회, 음성인식*/
+#bigdate ,#crawling{
+	height: 180px;
+ }
+
+/*데이터 기획*/
+#ai{
+	height: 220px;
+}
+
+/*-------프로젝트 소개부분---------*/
+
+.project_text{
+	width: 450px;
+}
+
+#project .sujum_img{
+	left:50%;
+	top: 2400px;
+	float: right;
+	size: 80%;
+	position: absolute;
+    }
+    
+#project .dht11_img{
+	left:50%;
+	top: 2600px;
+	float: right;
+	size: 80%;
+	position: absolute;
+    }
+    
+ #project .bigdate_img{
+	left:50%;
+	top: 2820px;
+	float: right;
+	size: 80%;
+	position: absolute;
+    }
+ 
+ #project .ai_img{
+	left:50%;
+	top: 3020px;
+	float: right;
+	size: 80%;
+	position: absolute;
+    }
+
+#project .craw_img{
+	left:50%;
+	top: 3280px;
+	float: right;
+	size: 80%;
+	position: absolute;
+    }
+  
+  /* ------작업과정 버튼------------*/  
+.btn_viewopen{
+ 	float: left;
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin-left: 5%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #425a73;
+    background-color: #fff;
+    border: 1px solid #425a73;
+    border-radius: 5px;
+  
+}
+ 

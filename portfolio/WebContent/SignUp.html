@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입</title>
+<script type="text/javascript">
+function check() {
+	
+	let userId = document.getElementById("id");
+	let userPwd = document.getElementById("pw");
+	let userName = document.getElementById("name");
+	let userPhone = document.getElementById("phone");
+	
+	// 아이디 입력 창 입력 여부 확인 작업
+	if(userId.value == "") {
+		alert("아이디를 입력해 주세요.....");
+		userId.focus();
+		return false;  // 데이터 전송이 차단됨.
+	}
+	
+	// 비밀번호 입력 창 입력 여부 확인 작업
+	if(userPwd.value == "") {
+		alert("비밀번호를 입력해 주세요~~~~");
+		userPwd.focus();
+		return false;
+	}
+	
+	// 이름 입력 창 입력 여부 확인 작업
+	if(userName.value == "") {
+		alert("이름을 입력해 주세요.....");
+		userName.focus();
+		return false;
+	}
+	
+	// 연락처 입력 창 입력 여부 확인 작업
+	if(userPhone.value == "") {
+		alert("연락처를 입력하세요...");
+		userPhone.focus();
+		return false;
+	}
+	
+}
+
+
+</script>
+</head>
+<body>
+<!-- 회원 가입 폼 -->
+
+<fieldset>
+	<legend>회원 가입</legend>
+	<ul>
+		<li>
+			<font color="red">*</font>아이디
+			<input type="text" min="1" maxlength="20" required  >
+			<input id="id" type="button" value="중복검사">
+		</li>
+		<li>
+			<font color="red">*</font>이름 
+			<input id="name" type="text" min="1" maxlength="20" required>
+		</li>
+		<li>
+			<font color="red">*</font>비밀번호 
+			<input id="pw" type="text" min="1" maxlength="20" required>
+		</li>
+		<li>
+			이메일
+			<input type="email">
+		</li>
+		<li>
+			<font color="red">*</font>전화번호
+			<input id="phone" type="tel" required>
+		</li>
+		<li>주소 검색
+			 <input type="text">
+		 	<input type="button" value="검색하기">
+		 	(주소 입력 : 송파동, 당산동....)
+		 </li>
+		 <li>
+		 	주소
+		 	<textarea cols="30" rows="2">
+		 	</textarea>
+		 </li>
+		 <li>
+		 	상세주소
+		 	<input type="text">
+		 </li>
+		 <li>
+		 	학력
+		 	<select>
+		 		<option value=""> :: 학력 :: </option> 
+		 		<option value="박사">박사</option>
+		 		<option value="석사">석사</option>
+		 		<option value="학사">학사</option>
+		 		<option value="전문대졸">전문대졸</option>
+		 		<option value="고졸">고졸</option>
+		 	</select>
+		</li>
+		<li>
+		 	홍보매체
+		 	<select>
+		 		<option value="">::: 어떻게 알기되었나요? ::: </option>
+		 		<option value="지인 소개"> 지인소개 </option>
+		 		<option value="인터넷 검색">인터넷 검색 </option>
+		 		<option value="기타">기타 </option>
+		 	</select>
+		 </li>
+		 <li>
+		 	메일 수신 
+		 	<input type="checkbox"> 네. 제공하는 정보메일 수신에 동의 합니다.
+		 </li>
+		 <li>
+		 	<input type="button" value="회원가입">
+		 	<input type="reset" value="가입안함">
+		 </li>
+	</ul>
+</fieldset>
+</body>
+</html>
+
